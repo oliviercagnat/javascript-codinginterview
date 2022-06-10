@@ -19,7 +19,7 @@ const maxSubArray = (nums) => {
     let maxSum = -Infinity;
     let currentSum = 0;
     // iterate through the nums, store sub-problems result
-    for(let i = 0; i < nums.length; i++){ 
+    for(let i = 0; i < nums.length; i++) { 
         //cumulating answers to the top
         
         //compare currentSum add current number 
