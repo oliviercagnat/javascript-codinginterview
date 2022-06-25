@@ -18,3 +18,16 @@ var singleNumber = function(nums) {
     return result;
 
  };
+
+ var singleNumber= function(nums){
+    const set1 = new Set();
+    for (i = 0; i < nums.length; i ++){
+        if (set1.has(nums[i]))
+            set1.delete(nums[i]);
+        else
+            set1.add(nums[i]);
+}
+    for (let item of set1){
+        return item;
+}
+};
